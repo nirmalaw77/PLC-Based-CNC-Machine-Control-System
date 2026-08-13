@@ -1,39 +1,51 @@
-<img width="720" height="1280" alt="WhatsApp Image 2026-08-14 at 12 15 37 AM" src="https://github.com/user-attachments/assets/339d6a1f-c769-4055-b61c-3e36b182084e" />
-<img width="2311" height="1598" alt="Screenshot 2026-08-14 010532" src="https://github.com/user-attachments/assets/82baff40-93ea-464f-9e21-fa4b8cc47d91" />
-# PLC-Based-CNC-Machine-Control-System
-Development of a PLC-based CNC machine control system using Omron CP2E, Python HMI, FINS/TCP communication, and multi axis motion control
+# PLC-Based CNC Machine Control System
 
+<p align="center">
+  <img src="Documentation/cnc_machine.jpg" width="650">
+</p>
 
-
-Overview
+## Overview
 
 This project presents the development of a PLC-based CNC
-machine control system using an Omron CP2E PLC.
+machine control system using an Omron CP2E PLC...
+
+## System Architecture
+
+<p align="center">
+  <img src="Documentation/system_block_diagram.png" width="700">
+</p>
+
+## Control System
+
+<p align="center">
+  <img src="Documentation/plc.jpg" width="400">
+  <img src="Documentation/hmi.jpg" width="400">
+</p>
+
+## Motion Control
 
 The system was initially developed as a 2-axis CNC controller
-and subsequently upgraded to 3-axis motion control.
+and later upgraded to 3-axis motion control...
 
-Features
+## Key Features
 
-• Multi-axis motion control
-• Stepper motor control
-• Acceleration/deceleration control
-• Absolute positioning
-• Relative positioning
-• Linear interpolation
-• Homing/origin search
-• Limit switch monitoring
-• Python-based HMI
-• FINS/TCP PLC-PC communication
-• G-code parsing
-• Automatic CNC machining
+- Stepper motor control
+- Absolute and relative positioning
+- Linear interpolation
+- Acceleration/deceleration control
+- Homing and limit monitoring
+- G-code parsing
+- FINS/TCP communication
 
-Technologies
+## Development
 
-Omron CP2E
-CX-Programmer
-Python
-FINS/TCP
-Stepper motors
-CNC
-G-code
+...
+
+## Technologies
+
+- Omron CP2E
+- CX-Programmer
+- Python
+- FINS/TCP
+- CNC
+- G-code
