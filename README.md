@@ -1,3 +1,4 @@
+<img width="2311" height="1598" alt="Screenshot 2026-08-14 010532" src="https://github.com/user-attachments/assets/909832c3-2fc5-4b38-b403-799706f8abeb" />
 # PLC-Based CNC Machine Control System
 
 <p align="center">
