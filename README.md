@@ -1,160 +1,144 @@
 # PLC-Based CNC Machine Control System
 
 <p align="center">
-  <h2 align="center">PLC-Based CNC Machine Control System</h2>
-  <p align="center">
-    Development of a multi-axis CNC machine control system using an Omron CP2E PLC
-  </p>
+  <img src="YOUR_MAIN_CNC_IMAGE_HERE" width="650">
 </p>
 
----
+## About the Project
 
-## 📌 Overview
+This project was developed during my time at **Flexline Technologies (Pvt) Ltd**, where I had the opportunity to work on a PLC-based CNC machine control system.
 
-This project involved the development of a **PLC-based CNC Machine Control System** using an **Omron CP2E PLC**.
+I started by developing a **2-axis CNC control system** and, after completing and testing it, upgraded the system to support **3-axis motion control**.
 
-The system was initially developed as a **2-axis CNC control system** and was later upgraded to a **3-axis motion control system**.
-
-The project involved the integration of PLC programming, motion control, CNC programming, industrial communication, and a Python-based Human Machine Interface (HMI).
+What made this project particularly interesting for me was that it brought together several areas I had been learning as a Mechanical Engineering student — mechanical motion, PLC programming, CNC control, programming, and industrial communication — into one working system.
 
 ---
 
-## ⚙️ System Features
+## What I Worked On
 
-- 2-axis CNC motion control
-- Upgrade to 3-axis motion control
-- Stepper motor control
-- Target frequency control
-- Acceleration and deceleration control
-- Absolute positioning
-- Relative positioning
-- Linear interpolation
-- Homing / origin search
-- Positive and negative limit monitoring
-- Emergency push-button monitoring
-- Automatic CNC cycle control
-- G-code parsing
-- Automatic CNC machining functions
-- Real-time machine monitoring
-- Python-based HMI
-- PLC-PC communication using FINS/TCP
+My work on the project involved several stages of developing and improving the CNC controller.
 
----
+### ⚙️ Motion Control
 
-## 🧠 PLC Control
+I worked on controlling the stepper motors and implementing the required motion-control functions, including:
 
-The CNC machine control system was developed using an **Omron CP2E PLC** and programmed using **Omron CX-Programmer**.
+* Target frequency / speed control
+* Acceleration and deceleration
+* Absolute positioning
+* Relative positioning
+* Linear interpolation
+* Homing / origin search
+* Positive and negative limit monitoring
 
-The PLC was responsible for:
+The system was first developed for **2-axis motion** and was later expanded to **3-axis motion**.
 
-- Motion control
-- Positioning
-- Motor control
-- Homing sequences
-- Limit monitoring
-- Automatic machining sequences
-- CNC data handling
-- Machine safety and control logic
+### 🧠 PLC Programming
 
----
+The machine-control logic was developed using an **Omron CP2E PLC** and **CX-Programmer**.
 
-## 🖥️ Python HMI
+The PLC handled functions such as:
 
-A Python-based Human Machine Interface (HMI) was developed to provide a PC-based interface for controlling and monitoring the CNC machine.
+* Axis motion
+* Positioning
+* Homing
+* Limit monitoring
+* Automatic sequences
+* CNC data handling
+* Machine-control logic
 
-The HMI was used for:
+### 💻 Python HMI
 
-- Machine initialization
-- Manual axis control
-- Position control
-- Sensor monitoring
-- Machine status monitoring
-- Communication with the PLC
+I also developed a **Python-based HMI** to provide a PC interface for controlling and monitoring the machine.
 
----
+The interface allowed communication with the PLC and provided functions such as:
 
-## 🔌 PLC–PC Communication
+* Machine initialization
+* Manual axis movement
+* Position control
+* Sensor monitoring
+* Machine status monitoring
 
-Communication between the Python application and the Omron CP2E PLC was implemented using the **Omron FINS/TCP industrial communication protocol**.
+### 🔌 PLC–PC Communication
 
-The Python application was designed to read and write PLC memory areas and exchange control and monitoring data with the PLC.
+The Python application communicated with the Omron CP2E PLC using the **FINS/TCP protocol**.
+
+This allowed the PC application to read and write PLC data and interact with the machine-control system in real time.
+
+### 📄 CNC & G-Code
+
+Another part of the project involved developing CNC-related functions, including **G-code parsing** and automatic machining sequences.
+
+This allowed the controller to interpret CNC instructions and translate them into the required machine movements.
 
 ---
 
-## 📐 CNC Motion Control
+## Development Journey
 
-The motion-control system supports both **absolute and relative positioning**.
+One of the most rewarding parts of the project was seeing the system grow step by step.
 
-**Linear interpolation** was also implemented to coordinate the movement of multiple axes during CNC operations.
+**2-Axis CNC → 3-Axis CNC → Motion Control → Python HMI → G-Code Processing**
 
-Motor motion parameters such as **target frequency and acceleration/deceleration** were configured as part of the motion-control system.
+Each stage required testing, troubleshooting, and making improvements before moving on to the next stage.
 
----
-
-## 🔄 Development Progression
-
-The system was developed in stages:
-
-### Stage 1 — 2-Axis CNC Control
-
-Development and testing of the initial 2-axis CNC control system.
-
-### Stage 2 — 3-Axis Upgrade
-
-The completed 2-axis system was subsequently expanded to support **3-axis motion control**.
-
-### Stage 3 — CNC Programming
-
-CNC functions were developed, including positioning, motion sequences, and automatic machining functions.
-
-### Stage 4 — Python HMI
-
-A Python-based HMI was developed for machine control and monitoring.
-
-### Stage 5 — G-Code Processing
-
-G-code parsing and implementation of automatic CNC machining functions were developed and tested.
+This process helped me understand that developing a machine-control system isn't just about writing code — it also involves understanding the machine, identifying problems, testing solutions, and making sure the different parts of the system work together reliably.
 
 ---
 
-## 🛠️ Technologies Used
+## System Overview
 
-| Category | Technology |
-|---|---|
-| PLC | Omron CP2E |
-| PLC Programming | CX-Programmer |
-| Programming | Python |
-| Communication | Omron FINS/TCP |
-| Motion Control | Multi-axis Stepper Motor Control |
-| CNC | G-code |
-| HMI | Python-based HMI |
+The overall system can be viewed as:
+
+**Python HMI → FINS/TCP → Omron CP2E PLC → Motion Control → Stepper Motors → CNC Machine**
+
+More detailed documentation and development material can be found in the folders in this repository.
 
 ---
 
-## 📷 Project Documentation
+## Technologies & Tools
 
-Project photographs, development documentation, PLC programs, and related technical material are available in the corresponding folders of this repository.
-
----
-
-## 📚 Learning & Development
-
-This project provided practical experience in integrating **mechanical systems, PLC programming, CNC motion control, industrial communication, and software development** into a single machine-control system.
-
-It also provided an opportunity to apply concepts learned through university coursework to practical engineering problems.
-
----
-
-## 👨‍💻 Project Experience
-
-**Flexline Technologies (Pvt) Ltd**
-
-Industrial Training / Project Experience
-
-The project involved the development, testing, debugging, and optimization of the PLC-based CNC machine control system.
+* **Omron CP2E PLC**
+* **Omron CX-Programmer**
+* **Python**
+* **FINS/TCP**
+* **Stepper Motors**
+* **CNC Motion Control**
+* **G-code**
+* **Python-based HMI**
 
 ---
 
-## ⚠️ Note
+## University Knowledge Applied
 
-This repository is intended to document the project, technical learning, and development experience. Certain proprietary or confidential information may be omitted.
+One of the interesting aspects of this experience was seeing how concepts learned at university could become useful in practical engineering work.
+
+For example, the **indirect addressing concepts I had learned in C++** during the previous semester came in handy while working on the CNC programming within the PLC.
+
+It was a good reminder that concepts learned in one area can sometimes become useful in completely different engineering applications.
+
+---
+
+## Documentation
+
+This repository contains selected project materials, including:
+
+* Development notes
+* PLC programming documentation
+* Python source code
+* Project photographs
+* Technical documentation
+
+The repository is organized to show both the **development process and the final system**.
+
+---
+
+## About My Contribution
+
+My involvement focused on the development and implementation of the CNC control system, including PLC programming, motion control, CNC functionality, Python-based machine interfacing, and PLC–PC communication.
+
+Working on this project gave me valuable practical experience in **industrial automation, CNC systems, motion control, PLC programming, and software integration**.
+
+---
+
+## Acknowledgement
+
+I would like to thank **Flexline Technologies (Pvt) Ltd** for giving me the opportunity to work on this project and gain practical experience in industrial automation and machine-control systems.
