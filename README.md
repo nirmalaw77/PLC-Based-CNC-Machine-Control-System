@@ -115,19 +115,6 @@ For example, the **indirect addressing concepts I had learned in C++** during th
 
 It was a good reminder that concepts learned in one area can sometimes become useful in completely different engineering applications.
 
----
-
-## Documentation
-
-This repository contains selected project materials, including:
-
-* Development notes
-* PLC programming documentation
-* Python source code
-* Project photographs
-* Technical documentation
-
-The repository is organized to show both the **development process and the final system**.
 
 ---
 
